@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <title>
+        CABP
+    </title>
+    <link rel="stylesheet" type="text/css" href="style/mystyle.css">
+</head>
+
+<body class="educacion">
+
+    <img src="img/Logo.svg" />
+    <nav>
+        <a href="index.html">Inicio</a> |
+        <a href="educacion.html">Educación</a> |
+        <a href="experiencia.html">Experiencia</a>
+    </nav>
+    <h1>Hoja de vida</h1>
+    <h1>Cesar Bejarano</h1>
+    <h2>Educación</h2>
+    <div class="main">
+
+        <table class="tg" id="tbEducation">
+            <colgroup>
+                <col style="width: 53px">
+                <col style="width: 401px">
+                <col style="width: 120px">
+                <col style="width: 97px">
+            </colgroup>
+            <tr>
+                <th class="tg-baqh">Año</th>
+                <th class="tg-baqh">Institucion</th>
+                <th class="tg-baqh">Lugar</th>
+                <th class="tg-baqh">Nombre</th>
+                <th class="tg-baqh">¿Culmino?</th>
+            </tr>
+            <tr>
+                <td class="tg-yw4l">2009</td>
+                <td class="tg-yw4l">Inscoop</td>
+                <td class="tg-yw4l">Bogota</td>
+                <td class="tg-yw4l">Bachiller</td>
+                <td class="tg-yw4l">Si</td>
+            </tr>
+            <tr>
+                <td class="tg-yw4l">2017</td>
+                <td class="tg-yw4l">Universidad Católica de colombia</td>
+                <td class="tg-yw4l">Bogota</td>
+                <td class="tg-yw4l">Ingeniero de sistemas</td>
+                <td class="tg-yw4l">Si</td>
+            </tr>
+            <tr>
+                <td class="tg-yw4l">2017</td>
+                <td class="tg-yw4l">Universidad Católica de colombia</td>
+                <td class="tg-yw4l">Bogota</td>
+                <td class="tg-yw4l">Postgrado Auditor de sistemas</td>
+                <td class="tg-yw4l">No</td>
+            </tr>
+        </table>
+        <form>
+            <fieldset>
+                <legend>Agregar Estudios</legend>
+                <label>Año:</label>
+                <select id="anio" required>
+                    <option value="2017">2017</option>
+                    <option value="2016">2016</option>
+                    <option value="2015">2015</option>
+                    <option value="2014">2014</option>
+                    <option value="2013">2013</option>
+                    <option value="2012">2012</option>
+                </select>
+                <label>Institucion:</label>
+                <input type="text" required id="inst" />
+                <label>Lugar:</label>
+                <input type="text" required id="lug" />
+                <label>Nombre:</label>
+                <input type="text" required id="nam" />
+                <label>¿Culmino?:</label>
+                <div>
+                    <input type="radio" id="r1" value="si" required> Si
+                    <br>
+                    <input type="radio" id="r2" value="no" readonly> No
+                    <br>
+                </div>
+                <button onclick="addExperience()">Agregar</button>
+            </fieldset>
+        </form>
+    </div>
+
+
+    <hr />
+
+    <footer>
+        <a href="mailto:cesarbejarano67@gmail.com">Enviame un mail</a> |
+        <label>
+            <strong>Cel:</strong> (+57) 318 695 48 34</label> |
+        <label>
+            <strong>Direccion:</strong> Kra 116 a no 83 a 11</label> |
+
+        <label>
+            <img src="https://www.facebook.com/images/fb_icon_325x325.png" style="width: 20px;height: 20px;"> /cesar.beja
+        </label>
+    </footer>
+</body>
+<script>
+    function addExperience() {
+        var anio = document.getElementById("anio").selectedOptions[0].innerText;
+        var inst = document.getElementById('inst').value;
+        var lug = document.getElementById("lug").value;
+        var nam = document.getElementById("nam").value;
+        var fin = '';
+        if (document.getElementById('r1').checked) {
+            fin = 'Si';
+        } else if (document.getElementById('r2').checked) {
+            fin = 'No';
+        }
+        debugger;
+        var table = document.getElementById("tbEducation");
+        var id = table.rows.length + 1;
+        var row = table.insertRow(id);
+        var cell1 = row.insertCell(0);
+        var cell2 = row.insertCell(1);
+        var cell3 = row.insertCell(2);
+        var cell4 = row.insertCell(3);
+        var cell5 = row.insertCell(4);
+        cell1.innerHTML = anio;
+        cell2.innerHTML = inst;
+        cell3.innerHTML = lug;
+        cell4.innerHTML = nam;
+        cell5.innerHTML = fin;
+
+    }
+</script>
+
+</html>

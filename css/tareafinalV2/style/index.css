@@ -1,0 +1,151 @@
+/* Ceular */
+@media (min-width: 768px) { 
+    body > header{
+        text-align: center;
+    }
+    body > header > div{
+        width: 100%;
+    }
+    body > header > div > .title{
+        text-align: center;
+    }
+    body > .contenido > .grid > .center{
+        max-width:  900px;
+    }
+    body > .secundaria > .container{
+        width: calc(100% - 60px);
+        height: 400px;
+        padding: 10px;
+        margin: 20px 10px;
+    }
+    body > footer{ 
+        text-align: center;
+    }
+    body > footer > div{ 
+        width: 100%;
+    }
+}
+/* Desktop */
+@media (min-width: 1024px) { 
+    body > header{
+        display: flex;
+        flex-wrap: nowrap;
+    }
+    body > header > div{
+        width: 50%;
+        padding: 0 10px;
+    }
+    body > header > div > .title{
+        text-align: left;
+    }
+    body > .contenido > .grid > .center{
+        min-width: 900px;
+        width: 100%;
+    }   
+    body > .secundaria > .container{
+     width: calc(50% - 60px);
+     height: 400px;
+     padding: 10px;
+     margin: 20px 10px;
+    }
+    body > footer{
+        display: flex;
+        flex-wrap: nowrap;
+    }
+    body > footer > div{ 
+        width: 25%;
+    }
+}
+body{
+    background-color: #02010a;
+    font-family: Dancing Script;
+}
+body > header{
+    background-color: #5b7989;
+    border-radius: 10px 10px 0 0;
+    animation: slideIn 1s;
+}
+body > header > div > .title{
+    color: #fff;
+    text-shadow: 2px 2px #02010a;
+}
+body > header > div > .top_menu > ul{
+    list-style: none;
+    display: flex;
+    flex-wrap: wrap;
+    text-align: right;
+}
+body > header > div > .top_menu > ul > li{
+    width: calc(33.3333% - 20px);
+    margin: 0 2px;
+    border: 1px dashed #fff;
+    text-align: center;
+}
+body > header > div > .top_menu > ul > li > a{
+    color: #fff;
+    text-decoration: none;
+}
+body > header > div > .top_menu > ul > .active{
+    background-color: black;
+    border: 1px solid #fff;
+}
+body > header > div > .top_menu > ul > li:hover{
+    background-color: black;
+    border: 1px solid #fff;
+}
+body > .contenido{
+    background-color: #82c3a6;
+}
+body > .contenido .grid{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    align-content: flex-end;
+}
+body > .contenido .grid .center{
+    margin: 20px;
+    box-shadow: 2px 2px #02010a;
+}
+body > .secundaria{
+    background-color: #d5c75f;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    align-content: flex-end;
+    text-align: center;
+}
+body > .secundaria > .container > img{
+    box-shadow: 2px 2px #02010a;
+    width: 100%;
+    height: 100%;
+}
+body > .secundaria > .container > a{
+    text-decoration: none;
+    color: #000000;
+    font-size: 20px;
+}
+body > .secundaria > .container > .left:hover{
+    transform: rotate(10deg);
+    box-shadow: 2px 2px #82c3a6;
+}
+body > .secundaria > .container > .right:hover{
+    transform: translate(5px, 20px);
+    box-shadow: 2px 2px #82c3a6;
+}
+body > footer{
+    background-color: #C6d5c5;
+    border-radius: 0 0 10px 10px;   
+}
+body > footer > div > ul {
+    list-style: none;
+}
+
+@-webkit-keyframes slideIn {
+    0% { margin-top: 150% }
+    60% { margin-top: -5% }
+    100% { margin-top: 0% }
+}

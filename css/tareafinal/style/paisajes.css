@@ -1,0 +1,38 @@
+@media (min-width: 768px) {
+    .paisajes {
+        display: flex;
+        flex-wrap: wrap;
+        background-color: #d5c75f;
+    }
+    .paisajes div{
+        width: 100%;
+        padding: 50px;
+    }
+    .paisajes div img{
+        width: 100%;
+    }
+}
+
+@media (min-width: 1024px) {
+    .paisajes {
+        display: flex;
+        flex-wrap: nowrap;
+        background-color: #d5c75f;
+    }
+    .paisajes div{
+        width: 33.3333%;
+        padding: 20px;
+    }
+    .paisajes div img{
+        width: 100%;
+    }
+}
+.blur{
+    filter: blur(10px);
+}
+.gris{
+    filter: grayscale(100%);
+}
+.sepia{
+    filter: sepia(90%);
+}
