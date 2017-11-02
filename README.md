@@ -1,37 +1,25 @@
-## Welcome to GitHub Pages
+## Welcome to GitHub Cesar's
 
-You can use the [editor on GitHub](https://github.com/C3S4RBP/nextu/edit/master/README.md) to maintain and preview the content for your website in Markdown files.
+Thanks to the continuous education in nextU, we are applying concepts of code control with free tools such as Github. Therefore I make available for free the download of these educational programs and with this to be able to support the community that has problems at the time of the development of these.
 
-Whenever you commit to this repository, GitHub Pages will run [Jekyll](https://jekyllrb.com/) to rebuild the pages in your site, from the content in your Markdown files.
+### ¿languages?
 
-### Markdown
-
-Markdown is a lightweight and easy-to-use syntax for styling your writing. It includes conventions for
+It is oriented to the development of hybrid applications.
 
 ```markdown
-Syntax highlighted code block
-
-# Header 1
-## Header 2
-### Header 3
-
-- Bulleted
-- List
-
-1. Numbered
-2. List
-
-**Bold** and _Italic_ and `Code` text
-
-[Link](url) and ![Image](src)
+<html></html>
+.css{
+}
+Function JS(parameters){
+}
 ```
 
-For more details see [GitHub Flavored Markdown](https://guides.github.com/features/mastering-markdown/).
+### contact us
 
-### Jekyll Themes
-
-Your Pages site will use the layout and styles from the Jekyll theme you have selected in your [repository settings](https://github.com/C3S4RBP/nextu/settings). The name of this theme is saved in the Jekyll `_config.yml` configuration file.
-
-### Support or Contact
-
-Having trouble with Pages? Check out our [documentation](https://help.github.com/categories/github-pages-basics/) or [contact support](https://github.com/contact) and we’ll help you sort it out.
+You can contact me through:
+```markdown
+  Facebook/cesar.beja
+  Skype cesar.beja
+  Mail cesarbejarano67@gmail.com
+  tel +57 1 318 695 4834
+```
