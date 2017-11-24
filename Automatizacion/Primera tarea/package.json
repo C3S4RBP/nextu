@@ -1,0 +1,15 @@
+{
+  "name": "cabp",
+  "version": "1.0.0",
+  "description": "Automatizacion de tareas",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Primera tarea\""
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://c3s4rbp.github.io/nextu/"
+  },
+  "author": "Cesar Bejarano",
+  "license": "ISC"
+}
