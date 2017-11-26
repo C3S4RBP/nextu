@@ -11,5 +11,9 @@
     "url": "https://c3s4rbp.github.io/nextu/"
   },
   "author": "Cesar Bejarano",
-  "license": "ISC"
+  "license": "ISC",
+  "devDependencies": {
+    "gulp": "^3.9.1",
+    "gulp-uglify": "^3.0.0"
+  }
 }
